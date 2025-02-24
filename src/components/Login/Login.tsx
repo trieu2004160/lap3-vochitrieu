@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
 import { useForm, isEmail, hasLength } from "@mantine/form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
