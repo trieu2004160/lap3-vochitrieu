@@ -4,12 +4,12 @@ import { IoLockClosedOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
-export function Signup() {
+function Signup() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (password !== confirmPassword) {
       setError("Passwords did not match");
